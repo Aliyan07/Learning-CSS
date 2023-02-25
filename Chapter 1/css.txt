@@ -1,0 +1,22 @@
+hi
+
+shortcut
+div#(some name) enter - id
+div.(some name) enter - class
+adding .(some name)  will insert child in parrent 
+ eg 
+div.(some name).(some name) -
+<div class="(some name)">
+
+        hi
+		<div class="(some name)">
+
+       		 hi
+       
+   	 	</div>
+       
+    </div>
+
+
+use span for only clickables - eg submit - done
+use div to write a paragraph

@@ -1,0 +1,6 @@
+To add some file :- git add .
+to name the file :-git commit -m "Comment"
+to push the code :- git push origin master
+
+
+To clone git repo :-git clone https://github.com/Aliyan07/Learning-CSS.git.
