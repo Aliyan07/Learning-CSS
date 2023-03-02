@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap");
+
+
+
+
+.flex-all-center{
+
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.search .btn {
+    border-radius: 0;
+    border: 2px solid rgb(240, 208, 208);
+    padding: 4px;
+    background: var(--main-bg-color);
+    color: white;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+  
+  }
+
+  .my-2{
+
+    margin: 27px 0;
+  }
+  .text-center{
+
+    text-align: center;
+  }
