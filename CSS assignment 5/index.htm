@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic table</title>
+    <style>
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+
+
+      *{
+        font-size: 20px;
+        background-color: black;
+       
+        
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Mukta', sans-serif;
+      }
+
+      .mainnn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .First {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+      }
+
+      
+      .First > div,
+      .Second > div,
+      .Third > div,
+      .Forth > div >div {
+        padding: 15px;
+        margin: 1px;
+
+        /* border: 1px solid red; */
+      }
+
+      .First :nth-child(2) {
+        background: transparent;
+      }
+
+      .Second {
+        display: grid;
+
+        grid-template-columns: repeat(10, 1fr);
+        height: fit-content;
+      }
+
+      .Third {
+        display: grid;
+        justify-content: flex-end;
+
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        height: fit-content;
+        grid-template-areas:
+          "T1 T2 T3 T4 T5 He"
+          "B C N O F Ne"
+          "Al Si P S Cl Ar"
+          "Ga Ge As Se Br Kr"
+          "In Sn Sb Te I Xe"
+          "Tl Pb Bi Po At Rn"
+          "Nh Fl Mc Lv Ts Og";
+      }
+
+      .Third :nth-child(1) {
+        background: transparent;
+        grid-area: T1;
+      }
+      .Third :nth-child(2) {
+        background: transparent;
+        grid-area: T2;
+      }
+      .Third :nth-child(3) {
+        background: transparent;
+        grid-area: T3;
+      }
+      .Third :nth-child(4) {
+        background: transparent;
+        grid-area: T4;
+      }
+      .Third :nth-child(5) {
+        background: transparent;
+        grid-area: T5;
+      }
+      .Third :nth-child(6) {
+        background-color: rgb(255, 190, 43);
+        grid-area: He;
+      }
+      .Third :nth-child(7) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Ne;
+      }
+      .Third :nth-child(8) {
+        background-color: rgb(255, 190, 43);
+        grid-area: F;
+      }
+      .Third :nth-child(9) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Cl;
+      }
+      .Third :nth-child(10) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Ar;
+      }
+      .Third :nth-child(11) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Br;
+      }
+      .Third :nth-child(12) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Kr;
+      }
+      .Third :nth-child(13) {
+        background-color: rgb(255, 190, 43);
+        grid-area: I;
+      }
+      .Third :nth-child(14) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Xe;
+      }
+      .Third :nth-child(15) {
+        background-color: rgb(255, 190, 43);
+        grid-area: At;
+      }
+      .Third :nth-child(16) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Rn;
+      }
+      .Third :nth-child(17) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Ts;
+      }
+      .Third :nth-child(18) {
+        background-color: rgb(255, 190, 43);
+        grid-area: Og;
+      }
+
+      .Third :nth-child(19) {
+        background-color: rgb(78, 255, 96);
+        grid-area: B;
+      }
+      .Third :nth-child(20) {
+        background-color: rgb(78, 255, 96);
+        grid-area: Si;
+      }
+      .Third :nth-child(21) {
+        background-color: rgb(78, 255, 96);
+        grid-area: Ge;
+      }
+      .Third :nth-child(22) {
+        background-color: rgb(78, 255, 96);
+        grid-area: As;
+      }
+      .Third :nth-child(23) {
+        background-color: rgb(78, 255, 96);
+        grid-area: Sb;
+      }
+      .Third :nth-child(24) {
+        background-color: rgb(78, 255, 96);
+        grid-area: Te;
+      }
+      .Third :nth-child(25) {
+        background-color: rgb(78, 255, 96);
+        grid-area: Po;
+      }
+
+      .Third :nth-child(26) {
+        background-color: rgb(49, 158, 255);
+        grid-area: C;
+      }
+
+      .Third :nth-child(27) {
+        background-color: rgb(49, 158, 255);
+        grid-area: N;
+      }
+
+      .Third :nth-child(28) {
+        background-color: rgb(49, 158, 255);
+        grid-area: O;
+      }
+      .Third :nth-child(29) {
+        background-color: rgb(49, 158, 255);
+        grid-area: P;
+      }
+
+      .Third :nth-child(30) {
+        background-color: rgb(49, 158, 255);
+        grid-area: S;
+      }
+      .Third :nth-child(31) {
+        background-color: rgb(49, 158, 255);
+        grid-area: Se;
+      }
+
+      .Third :nth-child(32) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Al;
+      }
+      .Third :nth-child(33) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Ga;
+      }
+      .Third :nth-child(34) {
+        background-color: rgb(255, 137, 48);
+        grid-area: In;
+      }
+      .Third :nth-child(35) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Sn;
+      }
+      .Third :nth-child(36) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Tl;
+      }
+      .Third :nth-child(37) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Pb;
+      }
+      .Third :nth-child(38) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Bi;
+      }
+      .Third :nth-child(39) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Nh;
+      }
+      .Third :nth-child(40) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Fl;
+      }
+      .Third :nth-child(41) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Mc;
+      }
+      .Third :nth-child(42) {
+        background-color: rgb(255, 137, 48);
+        grid-area: Lv;
+      }
+
+
+      .Forth >div >div{
+          min-width: 30px;
+         
+      }
+
+      
+      .Forth >div{
+          display: flex;
+         
+      }
+      .upper >div{
+        background-color: rgb(194,255,1);
+      }
+      .lower >div{
+          background-color: rgb(255,1,0);;
+      }
+      
+
+      .res {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 20px;
+      }
+
+      #Blue {
+        background-color: rgb(49, 158, 255);
+      }
+      #Pink {
+        background-color: rgb(247, 4, 255);
+      }
+      #skyBlue {
+        background-color: rgb(50, 211, 255);
+      }
+
+      #purple {
+        background-color: rgb(169, 76, 255);
+      }
+      #Golden {
+        border: 4px solid goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Periodic table of the element</h1>
+      <div class="mainnn">
+        <div class="First">
+          <div id="Blue">H</div>
+          <div></div>
+          <div id="Pink">Li</div>
+          <div id="purple">Be</div>
+          <div id="Pink">Na</div>
+          <div id="purple">Mg</div>
+          <div id="Pink">K</div>
+          <div id="purple">Ca</div>
+          <div id="Pink">Rb</div>
+          <div id="purple">Sr</div>
+          <div id="Pink">Cs</div>
+          <div id="purple">Ba</div>
+          <div id="Pink">Fr</div>
+          <div id="purple">Ra</div>
+        </div>
+        <div class="Second">
+          <div id="skyBlue">Sc</div>
+          <div id="skyBlue">Ti</div>
+          <div id="skyBlue">V</div>
+          <div id="skyBlue">Cr</div>
+          <div id="skyBlue">Mn</div>
+          <div id="skyBlue">Fe</div>
+          <div id="skyBlue">Co</div>
+          <div id="skyBlue">Ni</div>
+          <div id="skyBlue">Cu</div>
+          <div id="skyBlue">Zn</div>
+          <div id="skyBlue">Y</div>
+          <div id="skyBlue">Zr</div>
+          <div id="skyBlue">Nb</div>
+          <div id="skyBlue">Mo</div>
+          <div id="skyBlue">Tc</div>
+          <div id="skyBlue">Ru</div>
+          <div id="skyBlue">Rh</div>
+          <div id="skyBlue">Pd</div>
+          <div id="skyBlue">Ag</div>
+          <div id="skyBlue">Cd</div>
+          <div id="skyBlue">Lu</div>
+          <div id="skyBlue">Hf</div>
+          <div id="skyBlue">Ta</div>
+          <div id="skyBlue">W</div>
+          <div id="skyBlue">Re</div>
+          <div id="skyBlue">Os</div>
+          <div id="skyBlue">Ir</div>
+          <div id="skyBlue">Pt</div>
+          <div id="skyBlue">Au</div>
+          <div id="skyBlue">Hg</div>
+          <div id="skyBlue">Lr</div>
+          <div id="skyBlue">Rf</div>
+          <div id="skyBlue">Db</div>
+          <div id="skyBlue">Sg</div>
+          <div id="skyBlue">Bh</div>
+          <div id="skyBlue">Hs</div>
+          <div id="skyBlue">Mt</div>
+          <div id="skyBlue">Ds</div>
+          <div id="skyBlue">Rg</div>
+          <div id="skyBlue">Cn</div>
+        </div>
+        <div class="Third">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+
+          <div>He</div>
+          <div>Ne</div>
+          <div>F</div>
+          <div>Cl</div>
+          <div>Ar</div>
+          <div>Br</div>
+          <div>Kr</div>
+          <div>I</div>
+          <div>Xe</div>
+          <div>At</div>
+          <div>Rn</div>
+          <div>Ts</div>
+          <div>Og</div>
+
+          <div>B</div>
+          <div>Si</div>
+          <div>Ge</div>
+          <div>As</div>
+          <div>Sb</div>
+          <div>Te</div>
+          <div>Po</div>
+
+          <div>C</div>
+          <div>N</div>
+          <div>O</div>
+          <div>P</div>
+          <div>S</div>
+          <div>Se</div>
+
+          <div>Al</div>
+          <div>Ga</div>
+          <div>In</div>
+          <div>Sn</div>
+          <div>Tl</div>
+          <div>Pb</div>
+          <div>Bi</div>
+          <div>Nh</div>
+          <div>Fl</div>
+          <div>Mc</div>
+          <div>Lv</div>
+        </div>
+      </div>
+      <div class="res">
+        <div class="Forth">
+          <div class="upper">
+            <div>La</div>
+            <div>Ce</div>
+            <div>Pr</div>
+            <div>Nd</div>
+            <div>Pm</div>
+            <div>Sm</div>
+            <div>Eu</div>
+            <div>Gd</div>
+            <div>Tb</div>
+            <div>Dy</div>
+            <div>Ho</div>
+            <div>Er</div>
+            <div>Tm</div>
+            <div>Yb</div>
+            <div>Lu</div>
+          </div>
+          <div class="lower">
+            <div>Ac</div>
+            <div>Th</div>
+            <div>Pa</div>
+            <div>U</div>
+            <div>Np</div>
+            <div>Pu</div>
+            <div>Am</div>
+            <div>Cm</div>
+            <div>Bk</div>
+            <div>Cf</div>
+            <div>Es</div>
+            <div>Fm</div>
+            <div>Md</div>
+            <div>No</div>
+            <div>Lr</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
