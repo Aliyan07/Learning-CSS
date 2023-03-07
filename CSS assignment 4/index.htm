@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID-Area</title>
+    <style>
+      .container {
+        /* border: 4px solid red; */
+       display: grid;
+        grid-template-columns:repeat(4,150px);
+        grid-template-rows:repeat(3,120px);
+        grid-template-areas: 
+        "A1 A1 B1 B1"
+        "C1 D1 D1 D1"
+        "E1 E1 E1 E1";
+          gap: 10px;
+        
+       
+
+      }
+      .container >div{
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+       
+      }
+      .container  :nth-child(1) {
+        background-color:  blue;
+        grid-area: A1;
+        
+      }
+      .container  :nth-child(2) {
+        background-color:  rgb(99, 226, 14);
+        grid-area: B1;
+      }
+      .container  :nth-child(3) {
+        background-color:  rgb(40, 211, 168);
+        grid-area: C1;
+      }
+      .container  :nth-child(4) {
+        background-color:  rgb(139, 139, 201);
+        grid-area: D1;
+      }
+      .container  :last-child {
+        background-color:  rgb(243, 22, 22);
+        grid-area: E1;
+      }
+   
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+    </main>
+  </body>
+</html>
