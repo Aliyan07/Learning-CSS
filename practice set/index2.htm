@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav left and right</title>
+    <style>
+      .container {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 150px 150px 150px;
+        gap: 20px;
+
+        grid-template-areas: "N N N"
+                            "L1 L1 R1"
+                            "L1 L1 R2"
+                            "L1 L1 R3";
+      }
+      .container :nth-child(1) {
+        background-color: rgb(208, 255, 0);
+        grid-area: N;
+      }
+
+      .container :nth-child(2) {
+        background-color: rgb(255, 30, 0);
+        grid-area: L1;
+      }
+      .container :nth-child(3) {
+        background-color: rgb(14, 161, 14);
+        grid-area: R1;
+      }
+      .container :nth-child(4) {
+        background-color: rgb(14, 161, 14);
+        grid-area: R2;
+      }
+      .container :nth-child(5) {
+        background-color: rgb(14, 161, 14);
+        grid-area: R3;
+      }
+
+
+
+
+      /* Medium screens */
+      @media all and (min-width: 768px) and (max-width: 1024px) {
+
+.container {
+
+    display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows:50px 200px 200px 200px;
+grid-template-areas: "N N N"
+"L1 L1 L1"
+"L1 L1 L1"
+"R1 R2 R3"
+;
+
+}
+
+}
+
+
+
+/* small screens */
+@media all and (min-width: 0px) and (max-width: 767px) {
+
+.container {
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: 50px 90px 90px 120px 120px 120px;
+    grid-template-areas: 
+"N" 
+"L1"
+"L1"
+"R1"
+"R2"
+"R3"
+;
+
+
+
+}
+
+
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="nav">Nav</div>
+        <div class="left">Left</div>
+        <div class="right1">Right</div>
+        <div class="right2">Right2</div>
+        <div class="right3">Right3</div>
+      </div>
+    </main>
+  </body>
+</html>
